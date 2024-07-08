@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int T,i,j;
+    cin>>T;
+    cin.ignore();
+    while(T--)
+    {
+    string str;
+    getline(cin,str);
+    for(i=0;i<str.length()-1;i++)
+      {
+        for(j=i+1;j<str.length();j++)
+         {
+           if(str[i]==str[j])
+              {
+               cout<<str[i]<<endl;
+               break;
+              } 
+                 
+         }
+        if(str[i]==str[j])
+           break; 
+      }
+     if(i==str.length()-1)
+       cout<<"."<<endl;
+    }
+}    
+      

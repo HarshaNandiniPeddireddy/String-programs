@@ -1,0 +1,26 @@
+#include <iostream>
+#include<string>
+using namespace std;
+int main() {
+   int L=0,count=0;
+   bool b=true;
+   
+   string s;
+   getline(cin,s);
+   L=s.length();
+   for(int i=0;i<L;i++)
+     {  
+         char c=toupper(s[i]);
+         if(!(c=='A' || c=='E' || c=='I' || c=='O' || c=='U'))
+              b=false;
+              
+     } 
+     if(b==true)
+       cout<<"Yes";
+     else
+       cout<<"No";
+    
+     
+   
+    return 0;
+}

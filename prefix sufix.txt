@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    string str;
+    cin>>str;
+    int i,len=str.length();
+    for(i=0;i<str.length();i++)
+    {
+        if(str.substr(0,len-1-i)==str.substr(i+1)){
+            cout<<len-1-i;
+            break;
+        }
+    }
+}
